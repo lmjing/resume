@@ -115,5 +115,16 @@
         "dates": "2016.07"
       }
     ]
+  },
+  "skills": {
+    "Front-End": [
+      "ES6+", "Vue.js", "Angular.js", "React.js", "SCSS", "HTML/CSS"
+    ],
+    "Back-End": [
+      "Spring Boot", "Node.js"
+    ],
+    "Database": [
+      "PostgreSQL", "MySQL"
+    ]
   }
 }
