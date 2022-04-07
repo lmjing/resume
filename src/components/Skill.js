@@ -1,4 +1,3 @@
-import './Skill.scss'
 import Title from "./Title";
 
 function Skill(props) {

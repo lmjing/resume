@@ -7,8 +7,8 @@ function WorkExperience(props) {
     const kt = props.datas[0];
     const {job, dates, projects} = kt;
 
-    const [startDt, setStartDt] = useState( '현재');
-    const [endDt, setEndDt] = useState( '현재');
+    const [startDt, setStartDt] = useState('현재');
+    const [endDt, setEndDt] = useState('현재');
 
     useEffect(() => {
         setStartDt(dates[0]);
@@ -20,14 +20,18 @@ function WorkExperience(props) {
     })
 
     return (
-        <section>
+        <section id="work-experience">
             <Title text="Work Experience"/>
-            <header>
-                <h3>KT</h3>
-                <p>{job}</p>
-                <p className="date">{startDt} - {endDt}</p>
-            </header>
-            {ktProjects}
+            <article>
+                <header>
+                    <h3>KT</h3>
+                    <p>{job}</p>
+                    <p className="date">{startDt} - {endDt}</p>
+                </header>
+                <div className="content">
+                    {ktProjects}
+                </div>
+            </article>
         </section>
     )
 }
