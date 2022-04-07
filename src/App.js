@@ -1,13 +1,9 @@
 import './App.scss';
 import data from './assets/data.json'
-import Title from "./components/Title";
 import WorkExperience from "./components/WorkExperience";
 
 function App() {
-    // TODO 우선은 경력 단일항목이라 아래와 같이 처리 - 추후 develop
-    const ktProjects = data.workExperience[0].projects.map(project => {
-        return <WorkExperience data={project}/>
-    })
+    const {workExperience} = data;
 
     return (
         <div className="App">
@@ -25,13 +21,7 @@ function App() {
                         효율적으로 함께 일할 수 있는 환경을 만들기 위해 노력합니다.
                     </p>
                 </header>
-                <section>
-                    <Title text="Work Experience"/>
-                    <h2>KT</h2>
-                    Web Frontend Developer
-                    2018.10 ~ 현재
-                    {ktProjects}
-                </section>
+                <WorkExperience datas={workExperience}/>
             </main>
         </div>
     );

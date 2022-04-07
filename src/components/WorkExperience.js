@@ -1,26 +1,35 @@
+import Title from "./Title";
+import Project from "./Project";
 import {useEffect, useState} from "react";
 
-export default function WorkExperience(props) {
-    const {data} = props;
-    const {title, dates, jobs} = data;
+function WorkExperience(props) {
+    // TODO 우선은 경력 단일항목이라 아래와 같이 처리 - 추후 develop
+    const kt = props.datas[0];
+    const {job, dates, projects} = kt;
 
-    const [startDt, setStartDt] = useState( "현재");
-    const [endDt, setEndDt] = useState( "현재");
+    const [startDt, setStartDt] = useState( '현재');
+    const [endDt, setEndDt] = useState( '현재');
 
     useEffect(() => {
         setStartDt(dates[0]);
         if (dates[1]) setEndDt(dates[1]);
     }, [dates])
 
+    const ktProjects = projects.map((project, i) => {
+        return <Project key={i} data={project}/>
+    })
+
     return (
-        <article>
-            <h3>{title}</h3>
-            <p>{startDt} - {endDt}</p>
-            <ul>
-                {
-                    jobs.map((item, i) => <li key={i}>{item}</li>)
-                }
-            </ul>
-        </article>
+        <section>
+            <Title text="Work Experience"/>
+            <header>
+                <h2>KT</h2>
+                <p>{job}</p>
+                <p className="date">{startDt} - {endDt}</p>
+            </header>
+            {ktProjects}
+        </section>
     )
 }
+
+export default WorkExperience;
