@@ -118,13 +118,65 @@
   },
   "skills": {
     "Front-End": [
-      "ES6+", "Vue.js", "Angular.js", "React.js", "SCSS", "HTML/CSS"
+      {
+        "name": "JavaScript",
+        "color": "323330",
+        "logoColor": "F7DF1E"
+      },
+      {
+        "name": "Vue.js",
+        "color": "4FC08D",
+        "logoColor": "white"
+      },
+      {
+        "name": "AngularJS",
+        "color": "E23237",
+        "logoColor": "white"
+      },
+      {
+        "name": "React",
+        "color": "20232A",
+        "logoColor": "61DAFB"
+      },
+      {
+        "name": "Sass",
+        "color": "CC6699",
+        "logoColor": "white"
+      },
+      {
+        "name": "HTML5",
+        "color": "E34F26",
+        "logoColor": "white"
+      },
+      {
+        "name": "CSS3",
+        "color": "1572B6",
+        "logoColor": "white"
+      }
     ],
     "Back-End": [
-      "Spring Boot", "Node.js"
+      {
+        "name": "Spring Boot",
+        "color": "6DB33F",
+        "logoColor": "white"
+      },
+      {
+        "name": "Node.js",
+        "color": "339933",
+        "logoColor": "white"
+      }
     ],
     "Database": [
-      "PostgreSQL", "MySQL"
+      {
+        "name": "PostgreSQL",
+        "color": "4169E1",
+        "logoColor": "white"
+      },
+      {
+        "name": "MySQL",
+        "color": "4479A1",
+        "logoColor": "white"
+      }
     ]
   }
 }
