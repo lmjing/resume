@@ -9,4 +9,16 @@ main {
   .introduce {
     font-size: 1.75rem;
   }
+
+  #education {
+    .content {
+      span:last-child {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.text-bold {
+  font-weight: bold;
 }
