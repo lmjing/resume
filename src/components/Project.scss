@@ -1,0 +1,25 @@
+article {
+  p.date {
+    color: gray;
+    font-style: italic;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 5px 0;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: black;
+        left: -10px;
+        top: 12.5px;
+        content: "";
+      }
+    }
+  }
+}
