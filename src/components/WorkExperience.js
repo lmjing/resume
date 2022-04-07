@@ -23,7 +23,7 @@ function WorkExperience(props) {
         <section>
             <Title text="Work Experience"/>
             <header>
-                <h2>KT</h2>
+                <h3>KT</h3>
                 <p>{job}</p>
                 <p className="date">{startDt} - {endDt}</p>
             </header>

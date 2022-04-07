@@ -1,9 +1,10 @@
 import './App.scss';
 import data from './assets/data.json'
 import WorkExperience from "./components/WorkExperience";
+import OtherExperience from "./components/OtherExperience";
 
 function App() {
-    const {workExperience} = data;
+    const {workExperience, otherExpeience} = data;
 
     return (
         <div className="App">
@@ -22,6 +23,7 @@ function App() {
                     </p>
                 </header>
                 <WorkExperience datas={workExperience}/>
+                <OtherExperience data={otherExpeience}/>
             </main>
         </div>
     );
