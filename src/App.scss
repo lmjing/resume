@@ -34,6 +34,9 @@ main {
 
   ul {
     list-style: none;
+    @include mobile {
+      padding-left: 10px;
+    }
 
     li {
       padding: 5px 0;
@@ -54,6 +57,10 @@ main {
   .date {
     color: darkgray;
     font-style: italic;
+    font-size: 0.95em;
+    @include mobile {
+      font-size: 0.85em;
+    }
   }
 
   img.badge {
@@ -63,8 +70,16 @@ main {
   }
 
   h2.title {
-    font-size: 2.5rem;
     color: darksalmon;
+    @include desktop {
+      font-size: 2.5rem;
+    }
+    @include tablet {
+      font-size: 2rem;
+    }
+    @include mobile {
+      font-size: 1.8rem;
+    }
 
     .dot {
       color: black;
@@ -73,6 +88,12 @@ main {
     &.sub {
       font-size: 2rem;
       color: dimgrey;
+    }
+  }
+
+  .project h3 {
+    @include mobile {
+      font-size: 1.1rem;
     }
   }
 
