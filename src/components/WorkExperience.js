@@ -22,12 +22,16 @@ function WorkExperience(props) {
     return (
         <section id="work-experience">
             <Title text="Work Experience"/>
-            <header>
-                <h3>KT</h3>
-                <p>{job}</p>
-                <p className="date">{startDt} - {endDt}</p>
-            </header>
-            {ktProjects}
+            <article>
+                <header>
+                    <h3>KT</h3>
+                    <p>{job}</p>
+                    <p className="date">{startDt} - {endDt}</p>
+                </header>
+                <div className="content">
+                    {ktProjects}
+                </div>
+            </article>
         </section>
     )
 }

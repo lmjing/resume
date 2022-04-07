@@ -1,4 +1,3 @@
-import './Project.scss'
 import {useEffect, useState} from 'react';
 
 export default function WorkExpProject(props) {
@@ -14,7 +13,7 @@ export default function WorkExpProject(props) {
     }, [dates])
 
     return (
-        <article>
+        <div className="project">
             <h3>{title}</h3>
             <p className="date">{startDt} - {endDt}</p>
             <ul>
@@ -22,6 +21,6 @@ export default function WorkExpProject(props) {
                     jobs.map((item, i) => <li key={i}>{item}</li>)
                 }
             </ul>
-        </article>
+        </div>
     )
 }
