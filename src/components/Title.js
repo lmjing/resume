@@ -1,12 +1,14 @@
 import './Title.scss'
 
 export default function Title(props) {
-    const {text} = props;
+    const {text, sub} = props;
+
+    const classes = `title ${sub && 'sub'}`;
 
     return (
-        <h1 className="title">
+        <h2 className={classes}>
             {text}
             <span className="dot">.</span>
-        </h1>
+        </h2>
     );
 }
