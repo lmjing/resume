@@ -1,5 +1,3 @@
-import './Title.scss'
-
 export default function Title(props) {
     const {text, sub} = props;
 
