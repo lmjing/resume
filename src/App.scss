@@ -1,10 +1,30 @@
+@import "assets/_utils.scss";
+
 main {
   padding-bottom: 100px;
-  padding-left: 350px;
-  padding-right: 350px;
+  @include desktop {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @include tablet {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  @include mobile {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
   h1 {
-    font-size: 5rem;
+    @include desktop {
+      font-size: 5rem;
+    }
+    @include tablet {
+      font-size: 3.5rem;
+    }
+    @include mobile {
+      font-size: 2.5rem;
+    }
     text-align: left;
   }
 
@@ -72,7 +92,15 @@ main {
     }
 
     .introduce {
-      font-size: 1.75rem;
+      @include desktop {
+        font-size: 1.75rem;
+      }
+      @include tablet {
+        font-size: 1.5rem;
+      }
+      @include mobile {
+        font-size: 1.2rem;
+      }
       line-height: 1.5em;
     }
   }
@@ -80,12 +108,20 @@ main {
   #work-experience {
     article {
       display: flex;
+      flex-wrap: wrap;
 
       header {
-        width: 35%;
+        flex: 2;
+        @include mobile {
+          flex-basis: 100%;
+        }
       }
+
       .content {
-        width: 65%;
+        flex: 3;
+        @include mobile {
+          flex-basis: 100%;
+        }
       }
     }
   }
@@ -96,6 +132,7 @@ main {
         .title {
           font-weight: bold;
         }
+
         .date {
           margin-left: 10px;
           font-size: 0.85em;
