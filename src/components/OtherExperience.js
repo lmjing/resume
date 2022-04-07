@@ -1,4 +1,3 @@
-import './OtherExperience.scss'
 import Title from "./Title";
 
 function OtherExperience(props) {
@@ -17,7 +16,7 @@ function OtherExperience(props) {
     }
 
     return (
-        <section>
+        <section id="other-experience">
             <Title text="Other Experience"/>
             {
                 Object.keys(data).map(key => {
